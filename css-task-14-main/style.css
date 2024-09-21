@@ -1,0 +1,30 @@
+:root {
+  --box-width: 300px;
+  --box-height: 200px;
+  --box-background-color: blue;
+  --box-color: white;
+}
+
+body::before {
+  content: "This is before box";
+  display: block;
+  width: var(--box-width);
+  height: var(--box-height);
+  background-color: var(--box-background-color);
+  color: var(--box-color);
+  margin: 20px;
+  text-align: center;
+  line-height: var(--box-height); 
+}
+
+body::after {
+  content: "This is after box";
+  display: block;
+  width: var(--box-width);
+  height: var(--box-height);
+  background-color: var(--box-background-color);
+  color: var(--box-color);
+  margin: 20px;
+  text-align: center;
+  line-height: var(--box-height); 
+}
